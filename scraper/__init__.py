@@ -1,9 +1,9 @@
-"""
-The scraper module contains the OtomotoScraper class for scraping data from the otomoto.pl website.
-"""
+from .scraper import scrape_otomoto_search_results
 
-from .otomoto_scraper import OtomotoScraper
-import app.scraper
+# This code simply imports the scrape_otomoto_search_results function from app/scraper/scraper.py
+# and exposes it as part of the app.scraper module.
 
-# Create a scraper instance
-scraper = app.scraper.OtomotoScraper()
+
+__all__ = [
+    'scrape_otomoto_search_results',
+]
